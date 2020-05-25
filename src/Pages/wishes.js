@@ -1,5 +1,11 @@
 import React from 'react';
 import db from '../services/firebase'
+import {
+  Alert, 
+  Spinner,
+  Navbar,
+  NavbarBrand
+} from 'reactstrap';
 
 
 class Wishes extends React.Component {
@@ -12,7 +18,7 @@ class Wishes extends React.Component {
   }
 
   wrap(doc) {
-    let obj = ` ${doc.data().Name + " Wishes you " + doc.data().Wish + ' and says "' + doc.data().Message}"`
+    let obj = ` ${doc.data().Name + "|" + doc.data().Wish + ' and  "' + doc.data().Message}"`
     return obj
   }
 
@@ -36,14 +42,32 @@ class Wishes extends React.Component {
 
 
   render() {
-    if (this.state.docs !== null) { console.log(this.state.docs) }
+    //if (this.state.docs !== null) { console.log(this.state.docs) }
     return (
       <React.Fragment>
-        <h2>See your wishes</h2>
-        
+        <div>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href="/">See your Wishes</NavbarBrand>
+          </Navbar>
+        </div>
+
         <div>{
-          this.state.docs === null ? <h1>Loading...</h1> :
-          this.state.docs.map((wish,index) => <li key={index}>{wish}</li>)
+          this.state.docs === null ? <div>
+            <Spinner type="grow" color="primary" />
+            <Spinner type="grow" color="secondary" />
+            <Spinner type="grow" color="success" />
+            <Spinner type="grow" color="danger" />
+            <Spinner type="grow" color="warning" />
+            <Spinner type="grow" color="info" />
+            <Spinner type="grow" color="light" />
+            <Spinner type="grow" color="dark" />
+          </div> :
+            this.state.docs.map((wish) => <Alert color="info">
+              <h4 className="alert-heading">{wish.substring(0, wish.indexOf("|"))}</h4>
+              <p>
+                {wish.substring(wish.indexOf("|") + 1, wish.lenght)}
+              </p>
+            </Alert>)
         }
         </div>
 
