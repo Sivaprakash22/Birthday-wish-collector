@@ -57,7 +57,7 @@ class Wishes extends React.Component {
             </div>
           ) : (
             this.state.docs.map((wish) => (
-              <Alert color="info">
+              <Alert color="warning">
                 <h4 className="alert-heading">
                   {wish.substring(0, wish.indexOf("|"))}
                 </h4>
