@@ -10,7 +10,7 @@ class Home extends Component {
     const wish = document.getElementById("wish");
     const msg = document.getElementById("msg");
 
-    if (name.value === " " || wish.value === " ") {
+    if (name.value === "" || wish.value === "") {
       alert("Say your Name or wish");
       return;
     }
