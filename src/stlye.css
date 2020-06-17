@@ -1,7 +1,10 @@
-.box{
-  
-    background-color: black;
-   
+.box {
+  background-color: black;
+}
 
-    
+.pic {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 200px;
 }
