@@ -36,7 +36,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <center>
-          <img src={bday} className="pic" alt="Happy Birthday" />;
+          <img src={bday} className="pic" alt="Happy Birthday" />
         </center>
 
         <div className="box">
