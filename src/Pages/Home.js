@@ -10,7 +10,7 @@ class Home extends Component {
     const wish = document.getElementById("wish");
     const msg = document.getElementById("msg");
 
-    db.collection("wishes")
+    db.collection("wishes-ilk")
       .add({
         Name: name.value,
         Wish: wish.value,
@@ -73,7 +73,9 @@ class Home extends Component {
 
               <FormGroup>
                 <Col>
-                  <Button onClick={this.getData}>Submit</Button>
+                  <Button color="info" onClick={this.getData}>
+                    Submit
+                  </Button>
                 </Col>
               </FormGroup>
             </CardBody>

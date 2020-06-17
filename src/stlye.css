@@ -1,5 +1,9 @@
+#root {
+  background-color: rgb(226, 224, 224);
+}
+
 .box {
-  background-color: black;
+  background-color: rgb(197, 44, 44);
 }
 
 .pic {
