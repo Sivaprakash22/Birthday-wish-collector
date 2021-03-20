@@ -15,7 +15,7 @@ class Home extends Component {
       return;
     }
 
-    db.collection("wishes-ilk")
+    db.collection("wishes-kow")
       .add({
         Name: name.value,
         Wish: wish.value,
