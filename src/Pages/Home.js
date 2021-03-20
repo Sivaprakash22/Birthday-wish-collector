@@ -79,7 +79,7 @@ class Home extends Component {
               <FormGroup>
                 <Col>
                   <Button color="info" onClick={this.getData}>
-                    Sent to Kaushik
+                    Send
                   </Button>
                 </Col>
               </FormGroup>
