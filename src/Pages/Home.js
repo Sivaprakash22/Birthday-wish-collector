@@ -71,7 +71,7 @@ class Home extends Component {
                     type="textarea"
                     name="text"
                     id="msg"
-                    placeholder="words to ilakkiya"
+                    placeholder="words to Kowshik"
                   />
                 </Col>
               </FormGroup>
