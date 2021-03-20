@@ -19,7 +19,7 @@ class Wishes extends React.Component {
 
   async componentDidMount() {
     let data = [];
-    const respones = await db.collection("wishes-ilk").get();
+    const respones = await db.collection("wishes-kow").get();
     respones.docs.forEach((doc) => {
       data.push(this.wrap(doc));
     });
