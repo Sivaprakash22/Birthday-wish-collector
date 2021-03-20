@@ -79,7 +79,7 @@ class Home extends Component {
               <FormGroup>
                 <Col>
                   <Button color="info" onClick={this.getData}>
-                    Submit
+                    Sent to Kowshik
                   </Button>
                 </Col>
               </FormGroup>
