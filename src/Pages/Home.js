@@ -71,7 +71,7 @@ class Home extends Component {
                     type="textarea"
                     name="text"
                     id="msg"
-                    placeholder="words to Kowshik"
+                    placeholder="words to Kaushik"
                   />
                 </Col>
               </FormGroup>
@@ -79,7 +79,7 @@ class Home extends Component {
               <FormGroup>
                 <Col>
                   <Button color="info" onClick={this.getData}>
-                    Sent to Kowshik
+                    Sent to Kaushik
                   </Button>
                 </Col>
               </FormGroup>
